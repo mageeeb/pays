@@ -16,19 +16,15 @@
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
                 <li class="active"><a href="{{ path('app_homepage') }}">Home</a></li>
                 <li class="has-children">
-                    <a href="#">Dropdown</a>
+                    <a href="#">Destination</a>
                     <ul class="dropdown">
+                        <li><a href="{{ path('app_dak') }}">Dakar</a></li>
                         <li><a href="{{ path('app_sl') }}">Saint-louis</a></li>
-                        <li><a href="{{ path('app_galerie') }}">Galerie</a></li>
-                        <li class="has-children">
-                            <a href="#">Menu Two</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Sub Menu One</a></li>
-                                <li><a href="#">Sub Menu Two</a></li>
-                                <li><a href="#">Sub Menu Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Menu Three</a></li>
+                        <li><a href="{{ path('app_lac_rose') }}">Lac Rose</a></li>
+                        <li><a href="{{ path('app_lompoul') }}">Lompoul</a></li>
+                        <li><a href="{{ path('app_gore') }}">Île de Gorée</a></li>
+                        <li><a href="{{ path('app_casamance') }}">La Casamance</a></li>
+                        <li><a href="{{ path('app_saloum') }}">Le Saloum</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ path('app_service') }}">Services</a></li>
