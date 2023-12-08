@@ -1,0 +1,144 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div class="hero hero-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mx-auto text-center">
+                    <div class="intro-wrap">
+                        <h1 class="mb-0">Contactez-nous</h1>
+                        <p class="text-white">Vous pouvez nous envoyer un message pour plus de renseignements car il y'a d'autres magnifiques lieux à découvrir au Sénégal. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="fname">Prénom</label>
+                                    <input type="text" class="form-control" id="fname">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="lname">Nom</label>
+                                    <input type="text" class="form-control" id="lname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-black" for="email">Adresse Mail</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-black" for="message"> Votre Message</label>
+                            <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoi du Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-5 ml-auto">
+                    <div class="quick-contact-item d-flex align-items-center mb-4">
+                        <span class="flaticon-house"></span>
+                        <address class="text">
+                            Forest, Bruxelles/ Belgique
+                        </address>
+                    </div>
+                    <div class="quick-contact-item d-flex align-items-center mb-4">
+                        <span class="flaticon-phone-call"></span>
+                        <a href="tel:+32498150284">  <address class="text">
+                            +32 498 15 02 84
+                        </address></a>
+                    </div>
+                    <div class="quick-contact-item d-flex align-items-center mb-4">
+                        <span class="flaticon-mail"></span>
+                        <a href="mailto:magibsall@gmail.com">  <address class="text">
+                           magibsall@gmail.com
+                            </address> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="untree_co-section testimonial-section mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h2 class="section-title text-center mb-5">A chacun son expérience</h2>
+
+                    <div class="owl-single owl-carousel no-nav">
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="{{ asset('assets/images/person_2.jpg') }}" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Adam Aderson</h3>
+                            <blockquote>
+                                <p>&ldquo;Tout est incroyabe! J'ai beaucoup aimé la visite du Sine Saloum en pirogue & marchés pour découvrir la culture locale & école de brousse au Sénégal.&rdquo;</p>
+                            </blockquote>
+                        </div>
+
+
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="{{ asset('assets/images/person_3.jpg') }}" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Lukas Devlin</h3>
+                            <blockquote>
+                                <p>&ldquo;Merveilleuse expérience du lac rose pour découvrir le processus de fabrication du sel. Balade en 4X4 dans les dunes de sable avec un guide francophone.&rdquo;</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="{{ asset('assets/images/person_4.jpg') }}" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Anna Devlin</h3>
+                            <blockquote>
+                                <p>&ldquo;I had an excellent experience visiting a fish dryer, a bush school and a meal with the Peuls, a nomadic bush people.."</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="{{ asset('assets/images/person_5.jpg') }}" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Stéphanie Baldelli</h3>
+                            <blockquote>
+                                <p>&ldquo;Une expérience inoubliable surtout à Saint-Louis de par ça culture, son histoire et ses plats typique de la région."</p>
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial mx-auto">
+                            <figure class="img-wrap">
+                                <img src="{{ asset('assets/images/person_1.jpg') }}" alt="Image" class="img-fluid">
+                            </figure>
+                            <h3 class="name">Ryan De Ferrières</h3>
+                            <blockquote>
+                                <p>&ldquo;Déjà presque une semaine de passée depuis notre retour du Sénégal, et pourtant l impression de ne pas avoir encore atterri...."</p>
+                            </blockquote>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
