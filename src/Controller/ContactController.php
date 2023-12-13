@@ -2,15 +2,21 @@
 
 namespace App\Controller;
 
+use App\Entity\Utilisateur;
+use App\Form\UtilisateurType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ContactController extends AbstractController
 {
     #[Route('/contact', name: 'app_contact')]
-    public function index(): Response
+    public function index(Request $request): Response
     {
+        $utilisateur = new Utilisateur();
+        $form = $this->createForm(UtilisateurType::class, $utilisateur);
+        $form->handleRequest($request);
         return $this->render('contact/index.html.twig', [
             'controller_name' => 'ContactController',
         ]);

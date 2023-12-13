@@ -1,20 +1,66 @@
-<!DOCTYPE html>
+{% extends 'layout/base.html.twig' %}
 
-<title>Hello LacRoseController!</title>
+{% block title %}Lac-Rose{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="hero hero-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mx-auto text-center">
+                    <div class="intro-wrap">
+                        <h1 class="mb-0">Le Lac Rose</h1>
+                        <p class="text-white">Le lac Rose, ou lac Rëtba pour les Wolofs, est une lagune côtière fermée, c'est-à-dire coupée de la mer, situé au Sénégal, à proximité immédiate de Dakar. Le « Lac » s'étend sur environ 3 km2, avec une profondeur faible. Ces eaux sont salées et ont une teinte rose en raison de la présence d'une algue microscopique. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/pays/src/Controller/LacRoseController.php'|file_link(0) }}">src/Controller/LacRoseController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/pays/templates/lac_rose/index.html.twig'|file_link(0) }}">templates/lac_rose/index.html.twig</a></code></li>
-    </ul>
-</div>
+
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="owl-single dots-absolute owl-carousel">
+                        <img src="{{ asset('assets/images/hero-slider-3.jpg') }}" alt="image" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/hero-slider-4.jpg') }}" alt="image" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/hero-slider-5.jpg') }}" alt="image" class="img-fluid rounded-20">
+
+{#                        <img src="{{ asset('assets/images/slider_4.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">#}
+{#                        <img src="{{ asset('assets/images/slider_5.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">#}
+                    </div>
+                </div>
+                <div class="col-lg-5 pl-lg-5 ml-auto">
+                    <h2 class="section-title mb-4">Voyage au Lac-Rose</h2>
+                    <p>Le Lac Rose, Lac Retba de son vrai nom, est un incontournable lors d’un voyage au Sénégal. C’est l’un des lieux les plus connus du pays. Il est situé au nord de Dakar, à une quarantaine de kilomètres (1h de voiture environ). Il s’agit d’un lac salé, célèbre pour sa concentration en sel, sa couleur mais aussi pour avoir été le lieu d’arrivée du célèbre rallye Paris-Dakar jusqu’en 2007. J’y ai passé une journée et deux nuits, ce qui était parfait à mon avis pour découvrir le coin tranquillement. J’y suis allée en tout début janvier, lors des vacances scolaires de Noël. C’est un lieu que j’ai vraiment adoré! <br><br>
+                        Toutefois, la couleur n’apparaît que lorsque deux éléments sont réunis: il faut du vent pour agiter ces microorganismes et du soleil pour éclairer le lac. Petite précision au passage, on entend souvent parler de “mer rose” au Sénégal, mais le lac Retba est en fait un plan d’eau fermé, c’est à dire qu’il n’y a pas d’accès depuis l’océan.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="untree_co-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="owl-single dots-absolute owl-carousel">
+                        <img src="{{ asset('assets/images/hero-slider-9.jpg') }}" alt="image" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/slider_7.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/slider_11.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/slider_9.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+                        <img src="{{ asset('assets/images/slider_10.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid rounded-20">
+                    </div>
+                </div>
+                <div class="col-lg-5 pl-lg-5 ml-auto">
+                    <h2 class="section-title mb-4">La Culture</h2>
+                    <p>Dakar est une ville dynamique (embouteillée aussi), un peu le symbole de « l’Afrique en marche », où se concentre l’essentiel des compétences et des richesses du pays, en même temps qu’une grande pauvreté.
+                        Dakar a l’aspect d’une ville en pleine mutation, avec ses bouquets d’immeubles en construction et ses gros travaux qui ont achevé de bétonner la côte de cette magnifique presqu’île du Cap-Vert. <br><br>
+                        Seuls des quartiers populaires comme Médina, Yoff ou Patte d’Oie reflètent une certaine authenticité... tandis que le quartier historique du Plateau, en plein centre-ville, présente le charme désuet de ses bâtiments coloniaux.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
