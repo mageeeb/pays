@@ -1,20 +1,178 @@
-<!DOCTYPE html>
+{% extends 'layout/base.html.twig' %}
 
-<title>Hello CasamanceController!</title>
+{% block title %}La Casamance{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="hero hero-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mx-auto text-center">
+                    <div class="intro-wrap">
+                        <h1 class="mb-0">La Casamance</h1>
+                        <p class="text-white">Au sud du Sénégal, entre Gambie et Guinée-Bissau, la Casamance s'étire sur 300 km le long du fleuve du même nom relié. C'est une destination d'une grande beauté et d'une riche biodiversité, à la végétation tropicale, arrosé de nombreux cours d'eau et doté de terres fertiles. On découvre la région en reliant les villages en pirogue, voire en randonnée pédestre. Pour la plage direction le Cap-Skirring, la cité balnéaire et un brin chic de la côte occidentale sur l'océan Atlantique. Capitale de la Casamance, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/pays/src/Controller/CasamanceController.php'|file_link(0) }}">src/Controller/CasamanceController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/pays/templates/casamance/index.html.twig'|file_link(0) }}">templates/casamance/index.html.twig</a></code></li>
-    </ul>
-</div>
+
+    <div class="untree_co-section">
+        <div class="container my-5">
+            <div class="mb-5">
+                <div class="owl-single dots-absolute owl-carousel">
+                    <img src="{{ asset('assets/images/casa/casa1.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid">
+                    <img src="{{ asset('assets/images/casa/casa2.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid">
+                    <img src="{{ asset('assets/images/casa/casa3.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid">
+                    <img src="{{ asset('assets/images/casa/casa5.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid">
+                    <img src="{{ asset('assets/images/casa/casa6.jpg') }}" alt="Free HTML Template by Untree.co" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4">
+                    <div class="custom-block" data-aos="fade-up">
+                        <h2 class="section-title">A Visiter</h2>
+                        <div class="custom-accordion" id="accordion_1">
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Ziguinchor </button>
+                                </h2>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Ziguinchor possède un cachet provincial et authentique. C'est tout le charme de l'Afrique profonde ici, que vous fera découvrir votre guide touristique. Pour le reste, la nature luxuriante offre forêts de palétuviers et mangroves, palmeraies et nombreuses essences d'arbres exotiques dont le caïlcédrat, le fromager, le rônier, le filao et le flamboyant. Habité par les crocodiles et les hippopotames, le fleuve est aussi le paradis des oiseaux, pélicans, ibis, flamants roses, marabouts… Les eaux du littoral et de la lagune regorgent d'espadons, barracudas, murènes, raies, dorades… D'ailleurs en Casamance vous allez vous régaler avec des plats de poissons emblématiques dont le Tiéboudienne ou le Kaldou, mais aussi de crevettes, de crabes, d'huîtres de palétuviers et bien entendu du bon riz qui pousse en Casamance. Huile de palme et citron vert à la clé. Un conseil : offrez-vous une nuit au moins dans un campement villageois intégré. Dormir dans une grande case collective gérée par le village est une belle expérience et une option inoubliable de l'écotourisme.
+                                    </div>
+                                </div>
+                            </div> <!-- .accordion-item -->
+
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quand partir en Casamance ?</button>
+                                </h2>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        Quand partir en Casamance ? Il fait beau et sec presque toute l'année au Sénégal. La meilleure période pour s'y rendre se situe entre novembre et juin : les températures sont idéales (surtout entre avril et juin) et vous ne souffrirez pas trop de la chaleur à cette période. L’hivernage, la saison des pluies, se situe de juillet à octobre. La Casamance, contrée plus verte, amorce sa saison des pluies dès les mois d'avril ou mai. Le climat est défavorable en Casamance en avril et en mai avec des températures de 29 °C à 43 °C. La meilleure période pour partir s'étend de novembre à février inclus. C'est alors la haute saison touristique, toutes les infrastructures touristiques fonctionnent ce qui n'est pas le cas hors saison. Si l'été n'enregistre pas les plus fortes températures, l'humidité étant alors à son maximum, il en résulte une vraie fournaise que les Occidentaux ont du mal à supporter. C'est aussi la période où les moustiques sont les plus nombreux. Enfin, sachez que cette région étant soumise à certains troubles, mieux vaut vous renseigner sur le site Internet du ministère des Affaires étrangères avant votre départ, pour vérifier si la période est favorable.
+                                    </div>
+                                </div>
+                            </div> <!-- .accordion-item -->
+                            <div class="accordion-item">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Conseils & Astuces</button>
+                                </h2>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_1">
+                                    <div class="accordion-body">
+                                        La Casamance est soumise à un climat tropical qui est sensiblement adouci par les vents provenant de l'océan Atlantique. C'est la région la plus arrosée du Sénégal : Ziguinchor enregistre 1 250 mm de pluie par an. La Casamance connaît une saison des pluies allongée de juillet à septembre. La moyenne des températures en Casamance oscille au cours de l'année entre 26 et 32 °C, pendant la journée. Durant l'hivernage la température ne baisse même pas durant la nuit.<br><br>
+                                        Les voyages organisés sont très nombreux pour découvrir le pays de la Teranga. La Casamance est au programme. Séjour mariant balnéaire au cap Skirring, visite de Ziguinchor, remontée du fleuve Casamance en pirogue, nuit dans un campement villageois, etc. À vous de choisir les options qui vous conviennent en fonction de votre budget, de vos envies et de votre disponibilité.
+                                    </div>
+                                </div>
+
+                            </div> <!-- .accordion-item -->
+
+                        </div>
+                    </div> <!-- END .custom-block -->
+                    <div class="custom-block" data-aos="fade-up">
+                        <h2 class="section-title">Gallery</h2>
+                        <div class="row gutter-v2 gallery">
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa7.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa7.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa8.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa8.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa9.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa9.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa10.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa10.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa11.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa11.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa12.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa12.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa13.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa13.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa14.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa14.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="{{ asset('assets/images/casa/casa15.jpg') }}" class="gal-item" data-fancybox="gal"><img src="{{ asset('assets/images/casa/casa15.jpg') }}" alt="Image" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div> <!-- END .custom-block -->
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="custom-block" data-aos="fade-up" data-aos-delay="100">
+                        <h2 class="section-title">Plus de Renseignements ? </h2>
+                        <form class="contact-form bg-white">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="fname">Prénom*</label>
+                                        <input type="text" class="form-control" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="text-black" for="lname">Nom*</label>
+                                        <input type="text" class="form-control" id="lname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="email">Email* </label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">Nous ne communiquerons jamais votre adresse électronique à qui que ce soit..</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="text-black" for="message">Message*</label>
+                                <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-black" for="select">Select*</label>
+
+                                <select name="" id="select" class="custom-select">
+                                    <option value="">Casamance</option>
+                                    <option value="">Dakar</option>
+                                    <option value="">Saint-Louis</option>
+                                    <option value="">Lac-Rose</option>
+                                    <option value="">île de Gorée</option>
+                                    <option value="">Désert de Lompoul</option>
+                                    <option value="">Le Saloum</option>
+
+                                </select>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="control control--checkbox">
+                                    <span class="caption">Condition Générale</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5 section">
+
+    </div>
+    </div>
+
+
 {% endblock %}
