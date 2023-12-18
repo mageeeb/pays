@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^senegal.portfoliomagibsall.eu$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.senegal.portfoliomagibsall.eu$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
